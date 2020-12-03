@@ -2,21 +2,27 @@ function gettingJSON(){
     //Display the forecast
     // Your code here.
 
+
+    //http://api.openweathermap.org/data/2.5/forecast?id=524901&appid=ff50bde9df369a377f0b0ff4e5987cd4
+
+
     //Set default location if one isn't provided
     let location;
+    location = "Ann Arbor";
 
     // Your code here.
     console.log("Location is : " + location);
 
     //set default temperature format if one isn't provided
-    let fomat;
-
+    let format;
+    format = "imperial"
     // Your code here.
     console.log("Format is " + format);
 
     //set the query  
     let query;
     // Your code here.  
+    query = "api.openweathermap.org/data/2.5/weather?q=Ann Arbor&appid=ff50bde9df369a377f0b0ff4e5987cd4"
     
     console.log("Query is :" + query);
 
