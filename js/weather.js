@@ -41,7 +41,7 @@ function gettingJSON(){
     console.log( location);
 
    document.getElementById("celcius").addEventListener("click", function(){
-    format_new = document.querySelector('input[name = "temp"').value;
+    format_new = "metric"
   });
     console.log(format_new);
     
