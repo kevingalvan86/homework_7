@@ -33,7 +33,7 @@ function gettingJSON(){
     let temp;
     let tempImg;
     // Your code here.
-    loc = document.querySelector("#loc").value;
+    loc = document.querySelector("#location").value;
     console.log(loc);
     temp = document.querySelector("#temp").value;
     tempImg = document.querySelector("input").value;
