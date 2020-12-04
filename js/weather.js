@@ -42,7 +42,6 @@ function gettingJSON(){
     var check_radio = document.querySelector('input[name="temp"]:checked');
     if (check_radio != null) {
         format = check_radio.value;
-        console.log(format);
     }
     console.log(format);
     query = "https://api.openweathermap.org/data/2.5/weather?q=" + location + "&units=" + format + "&appid=ff50bde9df369a377f0b0ff4e5987cd4";
@@ -53,6 +52,7 @@ function gettingJSON(){
         //elements in HTML.  
         //I would print the JSON to the console
         // Your code here.
+        console.log(json)
 
     });
 }
