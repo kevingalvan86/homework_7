@@ -33,7 +33,6 @@ function gettingJSON(){
     let temp;
     let tempImg;
     // Your code here.
-    var format_new;
     let loc_input = document.getElementById("location").value;
     if (loc_input != ""){
         location = loc_input;
@@ -46,7 +45,7 @@ function gettingJSON(){
         console.log(format);
     }
     console.log(format);
-    
+    query = "https://api.openweathermap.org/data/2.5/weather?q=" + location + "&units=" + format + "&appid=ff50bde9df369a377f0b0ff4e5987cd4";
 
 
     $.getJSON(query,function(json){
