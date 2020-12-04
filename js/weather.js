@@ -15,14 +15,14 @@ function gettingJSON(){
 
     //set default temperature format if one isn't provided
     let format;
-    format = "imperial"
+    format = "imperial";
     // Your code here.
     console.log("Format is " + format);
 
     //set the query  
     let query;
     // Your code here.  
-    query = "api.openweathermap.org/data/2.5/weather?q=Ann Arbor&appid=ff50bde9df369a377f0b0ff4e5987cd4"
+    query = "api.openweathermap.org/data/2.5/weather?q=Ann Arbor&units=imperial&appid=ff50bde9df369a377f0b0ff4e5987cd4";
     
     console.log("Query is :" + query);
 
@@ -34,7 +34,7 @@ function gettingJSON(){
     let tempImg;
     // Your code here.
     loc = document.querySelector("#loc").value;
-    console.log(loc)
+    console.log(loc);
     temp = document.querySelector("#temp").value;
     img = document.querySelector("#tempImg").value;
 
