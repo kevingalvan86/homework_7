@@ -33,10 +33,9 @@ function gettingJSON(){
     let temp;
     let tempImg;
     // Your code here.
-    loc = document.querySelector("#location").value;
-    console.log(loc);
-    temp = document.querySelector("#temp").value;
-    tempImg = document.querySelector("input").value;
+    location = document.querySelector("#location").value;
+    format = document.querySelector("#temp").addEventListener("change").value;
+    console.log(format)
 
 
     $.getJSON(query,function(json){
