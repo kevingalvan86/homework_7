@@ -37,9 +37,13 @@ function gettingJSON(){
     if (loc_input != ""){
         location = loc_input;
     }
-    console.log( document.getElementById("location").value)
-    document.querySelector('input[name = "temp"').addEventListener("change", function(){
-          var format_new = document.querySelector('input[name = "temp"').value;
+    console.log( location);
+
+    document.getElementById("fahrenheit").addEventListener("click", change_)
+
+
+    document.querySelector('input[name = "temp"').addEventListener("click", function(){
+          let format_new = document.querySelector('input[name = "temp"').value;
         });
     format = format_new;
     console.log(format);
