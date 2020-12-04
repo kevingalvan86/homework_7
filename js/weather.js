@@ -22,7 +22,7 @@ function gettingJSON(){
     //set the query  
     let query;
     // Your code here.  
-    query = "https://api.openweathermap.org/data/2.5/weather?q=Ann Arbor&units=imperial&appid=ff50bde9df369a377f0b0ff4e5987cd4";
+    query = "https://api.openweathermap.org/data/2.5/weather?q=" + location + "&units=imperial&appid=ff50bde9df369a377f0b0ff4e5987cd4";
     
     console.log("Query is :" + query);
 
