@@ -8,7 +8,7 @@ function gettingJSON(){
 
     //Set default location if one isn't provided
     let location;
-    location = "Ann Arbor";
+    location = "Ann%Arbor";
 
     // Your code here.
     console.log("Location is : " + location);
@@ -33,13 +33,16 @@ function gettingJSON(){
     let temp;
     let tempImg;
     // Your code here.
-    let loc_input = document.getElementById("location").value
-    console.log(loc_input + " " + location)
+    let loc_input = document.getElementById("location").value;
+    if (loc_input != ""){
+        location = loc_input;
+    }
+    console.log( document.getElementById("location").value)
     document.querySelector('input[name = "temp"').addEventListener("change", function(){
           var format_new = document.querySelector('input[name = "temp"').value;
         });
-    format = format_new
-    console.log(format)
+    format = format_new;
+    console.log(format);
     
 
 
