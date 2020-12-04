@@ -40,7 +40,7 @@ function gettingJSON(){
     }
     console.log( location);
 
-    document.getElementById("fahrenheit").addEventListener("click", change_)
+   // document.getElementById("fahrenheit").addEventListener("click", change_)
 
 
     document.querySelector('input[name = "temp"').addEventListener("click", function(){
