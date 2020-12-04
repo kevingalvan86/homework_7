@@ -8,7 +8,7 @@ function gettingJSON(){
 
     //Set default location if one isn't provided
     let location;
-    location = "Ann Arbor";
+    location = "AnnArbor";
 
     // Your code here.
     console.log("Location is : " + location);
@@ -22,7 +22,7 @@ function gettingJSON(){
     //set the query  
     let query;
     // Your code here.  
-    query = "https://api.openweathermap.org/data/2.5/weather?q=" + location + "&units=imperial&appid=ff50bde9df369a377f0b0ff4e5987cd4";
+    query = "https://api.openweathermap.org/data/2.5/weather?q=" + location + "&units=" + format + "&appid=ff50bde9df369a377f0b0ff4e5987cd4";
     
     console.log("Query is :" + query);
 
@@ -36,7 +36,7 @@ function gettingJSON(){
     loc = document.querySelector("#loc").value;
     console.log(loc);
     temp = document.querySelector("#temp").value;
-    tempImg = document.querySelector("#tempImg").value;
+    tempImg = document.querySelector("input").value;
 
 
     $.getJSON(query,function(json){
