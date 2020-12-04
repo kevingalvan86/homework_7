@@ -34,7 +34,7 @@ function gettingJSON(){
     let tempImg;
     // Your code here.
     location = document.querySelector("#location").value;
-    format = document.querySelector("#temp").addEventListener("change").value;
+    format = document.querySelector('input[name = "temp"').addEventListener("change").value;
     console.log(format)
 
 
