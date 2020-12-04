@@ -36,7 +36,7 @@ function gettingJSON(){
     loc = document.querySelector("#loc").value;
     console.log(loc);
     temp = document.querySelector("#temp").value;
-    img = document.querySelector("#tempImg").value;
+    tempImg = document.querySelector("#tempImg").value;
 
 
     $.getJSON(query,function(json){
