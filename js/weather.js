@@ -33,6 +33,7 @@ function gettingJSON(){
     let temp;
     let tempImg;
     // Your code here.
+    var format_new;
     let loc_input = document.getElementById("location").value;
     if (loc_input != ""){
         location = loc_input;
@@ -43,10 +44,9 @@ function gettingJSON(){
 
 
     document.querySelector('input[name = "temp"').addEventListener("click", function(){
-          let format_new = document.querySelector('input[name = "temp"').value;
+          format_new = document.querySelector('input[name = "temp"').value;
         });
-    format = format_new;
-    console.log(format);
+    console.log(format_new);
     
 
 
