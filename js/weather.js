@@ -40,12 +40,9 @@ function gettingJSON(){
     }
     console.log( location);
 
-   // document.getElementById("fahrenheit").addEventListener("click", change_)
-
-
-    document.querySelector('input[name = "temp"').addEventListener("click", function(){
-          format_new = document.querySelector('input[name = "temp"').value;
-        });
+   document.getElementById("celcius").addEventListener("click", function(){
+    format_new = document.querySelector('input[name = "temp"').value;
+  });
     console.log(format_new);
     
 
