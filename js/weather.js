@@ -40,10 +40,12 @@ function gettingJSON(){
     }
     console.log( location);
 
-   document.getElementById("celcius").addEventListener("click", function(){
-    format_new = "metric"
-  });
-    console.log(format_new);
+    var check_radio = document.querySelector('input[name="temp"]:checked');
+    if (check_radio != null) {
+        format = check_radio.value;
+        console.log(format);
+    }
+    console.log(format);
     
 
 
