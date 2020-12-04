@@ -53,8 +53,10 @@ function gettingJSON(){
         //I would print the JSON to the console
         // Your code here.
         //console.log(json)
-        console.log(json.main.temp)
-        document.getElementById("loc").innerText = json.main
+        console.log(json.main.temp);
+        console.log(json.name);
+        document.getElementById("loc").innerText = json.name;
+        document.getElementById("temp").innerText = json.main.temp + " with " + json.weather[0].description;
 
     });
 }
