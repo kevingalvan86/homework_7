@@ -45,14 +45,16 @@ function gettingJSON(){
     }
     console.log(format);
     query = "https://api.openweathermap.org/data/2.5/weather?q=" + location + "&units=" + format + "&appid=ff50bde9df369a377f0b0ff4e5987cd4";
-
+    document.getElementById("forecast").style.display = "block"
 
     $.getJSON(query,function(json){
         //Use returned json to update the values of the three 
         //elements in HTML.  
         //I would print the JSON to the console
         // Your code here.
-        console.log(json)
+        //console.log(json)
+        console.log(json.main.temp)
+        document.getElementById("loc").innerText = json.main
 
     });
 }
