@@ -53,7 +53,7 @@ function gettingJSON(){
         document.getElementById("loc").innerText = json.name;
         document.getElementById("temp").innerText = json.main.temp + " with " + json.weather[0].description;
         let url; 
-        url = "http://openweathermap.org/img/wn/" + json.weather[0].icon + ".png";
+        url = "https://openweathermap.org/img/wn/" + json.weather[0].icon + ".png";
         document.getElementById("tempImg").src = url;
         document.getElementById("tempImg").alt = json.weather[0].description;
     });
